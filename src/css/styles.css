@@ -67,3 +67,68 @@ body {
 audio{
 	display: none;
 }
+
+@media only screen and (max-width: 660px){
+	.main__container{
+		width: 300px;
+		height: 600px;
+		margin: 50px auto;
+		border-radius: 20PX;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+	}
+	.header{
+		display: flex;
+		justify-content: space-around;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.game__container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 70px auto;
+		gap: 20px;
+	}
+	.option{
+		width: 100px;
+		height: 100px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		cursor: pointer;
+	}
+	.red__container{
+		background-color: #FFADAD;
+	}
+	.green__container{
+		background-color: #deffa0;
+	}
+	.yellow__container{
+		background-color: #f4f876;
+	}
+	.blue__container{
+		background-color: #d0fff8;
+	}
+	.footer{
+		text-align: center;
+	}
+	.button{
+		color: aliceblue;
+		font-size: 1.5em;
+		padding: 15px;
+		background-color: #5f5f5f;
+		border-radius: 20px;
+		border: none;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		cursor: pointer;
+	}
+	.button:disabled{
+		opacity: 0.4;
+	}
+	.selected{
+		filter: brightness(2);
+	}
+	audio{
+		display: none;
+	}
+	
+}

@@ -1,7 +1,7 @@
-import cero from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/docs/assets/1.mp3';
-import first from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/docs/assets/2.mp3';
-import second from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/docs/assets/3.mp3';
-import third from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/docs/assets/4.mp3';
+import cero from '../assets/4.mp3';
+import first from '../assets/1.mp3';
+import second from '../assets/2.mp3';
+import third from '../assets/3.mp3';
 
 const startButtonElement = document.getElementById('startbutton');
 
@@ -9,7 +9,7 @@ const playerChoiceContainer = document.getElementById('gameContainer');
 const pointsCounter = document.getElementById('points');
 const audio = document.getElementById('audio');
 const round = document.getElementById('roundCounter');
-const pcChoice = [];
+let pcChoice = [];
 let playerChoice = [];
 let roundCounter = 0;
 let gameActive = false;
@@ -81,8 +81,8 @@ const pcChoiceElement = () => {
 					} while (value === lastColorIndex); // Evita que se repita el último color de la secuencia anterior
 					pcChoice.push(value);
 					console.log('Elección de la computadora:', pcChoice);
-					const colorIndex = parseInt(pcChoice[pcChoice.length - 1]);
-					const colorElement = playerChoiceContainer.children[colorIndex];
+					let colorIndex = parseInt(pcChoice[pcChoice.length - 1]);
+					let colorElement = playerChoiceContainer.children[colorIndex];
 
 					if (colorIndex === lastColorIndex) {
 						colorElement.classList.remove('selected');

@@ -1,7 +1,7 @@
-import cero from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/src/assets/1.mp3';
-import first from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/src/assets/2.mp3';
-import second from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/src/assets/4.mp3';
-import third from 'https://github.com/ManuelPerezYebra/Simon-Says/blob/main/src/assets/3.mp3';
+import cero from '../assets/1.mp3';
+import first from '../assets/2.mp3';
+import second from '../assets/3.mp3';
+import third from '../assets/4.mp3';
 
 const startButtonElement = document.getElementById('startbutton');
 

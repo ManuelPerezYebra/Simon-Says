@@ -9,7 +9,7 @@ const playerChoiceContainer = document.getElementById('gameContainer');
 const pointsCounter = document.getElementById('points');
 const audio = document.getElementById('audio');
 const round = document.getElementById('roundCounter');
-let pcChoice = [];
+const pcChoice = [];
 let playerChoice = [];
 let roundCounter = 0;
 let gameActive = false;
@@ -81,8 +81,8 @@ const pcChoiceElement = () => {
 					} while (value === lastColorIndex); // Evita que se repita el último color de la secuencia anterior
 					pcChoice.push(value);
 					console.log('Elección de la computadora:', pcChoice);
-					let colorIndex = parseInt(pcChoice[pcChoice.length - 1]);
-					let colorElement = playerChoiceContainer.children[colorIndex];
+					const colorIndex = parseInt(pcChoice[pcChoice.length - 1]);
+					const colorElement = playerChoiceContainer.children[colorIndex];
 
 					if (colorIndex === lastColorIndex) {
 						colorElement.classList.remove('selected');

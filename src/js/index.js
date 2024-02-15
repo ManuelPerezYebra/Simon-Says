@@ -1,7 +1,7 @@
-import '../assets/0.mp3';
-import '../assets/1.mp3';
-import '../assets/2.mp3';
-import '../assets/3.mp3';
+import cero from '../assets/0.mp3';
+import first from '../assets/1.mp3';
+import second from '../assets/2.mp3';
+import third from '../assets/3.mp3';
 
 const startButtonElement = document.getElementById('startbutton');
 
@@ -15,6 +15,12 @@ let roundCounter = 0;
 let gameActive = false;
 let points = 0;
 
+const GAME_SOUND = {
+	0: cero,
+	1: first,
+	2: second,
+	3: third
+};
 const startGame = () => {
 	startButtonElement.disabled = true;
 	console.log('El juego ha comenzado');
@@ -140,7 +146,7 @@ const winPoints = () => {
 	pointsCounter.textContent = points;
 };
 const playSound = value => {
-	audio.src = `./assets/${value}.mp3`;
+	audio.src = GAME_SOUND[value];
 	audio.play();
 	console.log(value);
 };

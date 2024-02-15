@@ -1,4 +1,10 @@
+import '../assets/0.mp3';
+import '../assets/1.mp3';
+import '../assets/2.mp3';
+import '../assets/3.mp3';
+
 const startButtonElement = document.getElementById('startbutton');
+
 const playerChoiceContainer = document.getElementById('gameContainer');
 const pointsCounter = document.getElementById('points');
 const audio = document.getElementById('audio');

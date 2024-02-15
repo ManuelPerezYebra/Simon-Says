@@ -1,7 +1,7 @@
-import cero from '../assets/0.mp3';
-import first from '../assets/1.mp3';
-import second from '../assets/2.mp3';
-import third from '../assets/3.mp3';
+import cero from '../src/assets/0.mp3';
+import first from '../src/assets/1.mp3';
+import second from '../src/assets/2.mp3';
+import third from '../src/assets/3.mp3';
 
 const startButtonElement = document.getElementById('startbutton');
 

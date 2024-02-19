@@ -154,5 +154,7 @@ const roundShow = () => {
 		round.textContent = `0${roundCounter}`;
 	}
 };
-const lostGame = () => {};
+const lostGame = () => {
+	location.reload();
+};
 startButtonElement.addEventListener('click', startGame);

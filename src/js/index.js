@@ -148,7 +148,6 @@ const winPoints = () => {
 const playSound = value => {
 	audio.src = GAME_SOUND[value];
 	audio.play();
-	console.log(value);
 };
 const roundShow = () => {
 	if (roundCounter < 10) {
